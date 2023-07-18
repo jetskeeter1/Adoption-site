@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--oswaldFont);
+}
+:root{
+    --red: #ED3F57;
+    --highlightH: rgb(147, 215, 255);
+    --highlightH-white: rgb(248, 254, 255);
+    --oswaldFont:'Oswald', sans-serif;
+}
+body{
+    margin: 0;
+}
+li{
+    list-style: none;
+    padding: 0;
+}
+li a{
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    color: #000;
+}
+li a:hover{
+    transition: 200ms;
+    color: var(--highlightH);
+}
+path{
+    fill: white;
+}
+.getPabsolute{
+    position: absolute;
+}
+.getPrelative{
+    position: relative;
+}
+.getflex{
+    display: flex;
+}
+.hleft{
+    top: 15px;
+    left: 10px;
+}
+.hright{
+    top: 15px;
+    right: 15px;
+}
+
+.topcontainer{
+    background-color: #272727;
+    height: 50px;
+    width: 100%;
+}
+.topcontainer a{
+    color: white;
+}
+.login{
+    color: white;
+}
+.login:hover{
+    transition: 500ms;
+    color: var(--highlightH);
+    text-shadow:0px 0px 2px rgb(255, 0, 0);
+    cursor: pointer;
+    & path{
+        transition: 500ms;
+        fill: var(--highlightH);
+    }
+}
+.login:active{
+    color: rgb(0, 191, 255);
+    cursor: default;
+}
+.filter{
+    fill: yellow;
+}
+.navcontainer{
+    background-color: #ffffff;
+    width: 100%;
+    font-family: var(--oswaldFont);
+    font-size: 1.5em;
+    padding: 10px 0;
+    top: 50px;
+}
+.navcontainer a{
+    border: 1px solid var(--highlightH-white);
+    background-color: var(--highlightH-white);
+    padding: 8px;
+    margin: 0;
+}
+.Whitehighlight a:hover{
+    transition: 200ms;
+    border: 1px solid #272727;
+    background-color: #272727;
+    text-shadow: 0px 0px 10px #ffffff;
+    color: white;
+}
+.Whitehighlight a:active{
+    color: blue;
+}
+/* SECTION JUMBO TRON_________________________________________________ */
+.sec1{
+    width: 100%;
+    height: 90vh;
+    background-image: url(background/background\ dog.png);
+    background-size: 100% 45em;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+.sec1-mover{
+    font-size: 2em;
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    top: 9em;
+    left: 8em;
+}
+.sec1-title{
+    cursor: default;
+    font-size: 3em;
+    font-family: var(--oswaldFont);
+    transition: 500ms;
+}
+.sec1-title:hover{
+    transition: 200ms;
+    color: rgb(88, 88, 88);
+    text-decoration: underline;
+}
+.sec1-button-container{
+    border: 4px solid yellow;
+    border-radius: 5px;
+    padding: 5px;
+    width: fit-content;
+    cursor: pointer;
+    font-family: var(--oswaldFont);
+    font-weight: 500;
+    color: rgb(255, 255, 58);
+}
+
+.sec1-button-container:hover{
+    position: absolute;
+    left: -0.1em;
+    top: 4.37em;
+    box-shadow:inset 3px 2px 4px rgba(0, 0, 0, 0.322), 3px 2px 4px rgba(0, 0, 0, 0.322);
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.521);
+}
+
+.quotation{
+    background-color: var(--red);
+    color: var(--highlightH-white);
+    padding: 30px 20rem;
+}
+.qName-mover{
+    font-family: 'Times New Roman', Times, serif;
+    top: 10px;
+    left:15px;
+}
+/* SEC2___________________________________________________________________________________ */
+
+.sec2{
+    width: 100%;
+    height: 90vh;
+    background-color: var(--highlightH-white);
+}
+
+.show-wrapper{
+    top: 60px;
+    left: 160px;
+    display: flex;
+    gap: 50px;
+    width: 80%;
+}
+
+.show-info{
+    left: 10px;
+    width: 38em;
+    flex-direction: column;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 1 1 21 1;
+}
+
+.tag-red{
+    letter-spacing: 1px;
+    font-size: 17px;
+    font-weight: 700;
+    text-shadow: 0 0 3px black;
+    width: fit-content;
+    padding: 10px 30px 10px 30px;
+    border-radius: 3px;
+    background-color: var(--red);
+    color: #ffffff;
+}
+
+.pet-info{
+}
+
+.tag-green{
+    background-color: rgb(31, 185, 31);
+    color: white;
+    padding: 10px;
+}
+.tag-yellow{
+    background-color: rgb(247, 236, 27);
+    color: white;
+    padding: 10px;
+}
+
+/* _______________________________________SEC3___________________________________________ */
+
+.grid-span-2{
+    grid-column: span 2;
+}
+
+.card-large{
+    height: 150px;
+}
+
+.accessory{
+    background-color: var(--red);
+    width: 100%;
+    height: 80vh;
+}
+
+.accessory-wrapper{
+    width: fit-content;
+    
+}
+
+.section-title{
+    top: 50px;
+    left: 30px;
+    width: fit-content;
+    height: 2em;
+    font-size: 1.8em;
+    padding:10px;
+    text-decoration: underline;
+}
+
+.contents{
+    top: 90px;
+    left: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
+}
+
+.item-cards{
+    background-color: #ffffff;
+    width: 25.5em;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+.image-cover{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 187px;
+    background-image: url(accessory/puphandbag.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+.image-cover1{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 187px;
+    background-image: url(accessory/funnyglasses.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+.image-cover2{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 187px;
+    background-image: url(accessory/husky\ with\ glasses.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -150px ;
+    margin-bottom: 15px;
+}
+
+.card-info-contain{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 25em;
+}
+
+.title-card{
+    background-color: #252525;
+    border-radius: 10px;
+    width: 20em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.info-card{
+    width: 20em;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 1em;
+}
+/* _______________________________________FOOTER________________________________________ */
+
+footer{
+    background-color: #272727;
+    width: 100%;
+    height: 2em;
+}
